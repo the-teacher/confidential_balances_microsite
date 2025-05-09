@@ -13,7 +13,8 @@ $footer-border: #2f2f2f;
 // All styles isolated within .page-example namespace
 .page-example {
   &--content {
-    border: 1px dashed #2f2f2f;
+    // background-color: $content-bg;
+    // border: 2px dashed $content-border;
     padding: 16px;
     min-height: 400px;
   }

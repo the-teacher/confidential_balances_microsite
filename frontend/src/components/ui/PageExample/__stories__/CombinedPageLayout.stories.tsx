@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import HolyGrailLayoutWithParams from "../../HolyGrailLayout/HolyGrailLayoutWithParams";
 import { AppHeader } from "../../../AppHeader/AppHeader";
+import { InfoBlock } from "../../../InfoBlock";
 import React from "react";
 
 import "./stories.scss";
@@ -9,6 +10,36 @@ import "../../../ui/atoms/app-button.scss";
 import "../../../ui/atoms/flex.scss";
 import "../../../AppHeader/app-header.scss";
 import "../../../ui/atoms/text-defaults.scss";
+import "../../../InfoBlock/styles.scss";
+
+// Step blocks component
+const GettingStartedSteps = () => (
+  <div className="mb-4">
+    <h3>Getting Started</h3>
+    <div className="flex gap8">
+      <InfoBlock
+        number={1}
+        title="Create test account"
+        description="Receive 1000 free tokens in your account for testing purposes"
+      />
+      <InfoBlock
+        number={2}
+        title="Deposit tokens"
+        description="Deposit tokens into a confidential balance to start experimenting"
+      />
+      <InfoBlock
+        number={3}
+        title="Try transfer or withdraw"
+        description="Transfer or withdraw tokens from confidential balances"
+      />
+      <InfoBlock
+        number={4}
+        title="Go into dev mode"
+        description="Want to see how it all works under the hood? Check out dev mode for more info"
+      />
+    </div>
+  </div>
+);
 
 // Content components
 const SimpleContent = () => (
@@ -18,6 +49,9 @@ const SimpleContent = () => (
       Transfer tokens confidentially on Solana. An end-to-end demonstration of
       encrypted token transfers using Solana's Confidential Transfer extension
     </p>
+
+    <GettingStartedSteps />
+
     <p>
       Your encryption keys (ElGamal & AES) are generated securely from your
       wallet signature and used only during your session.They are never stored,
