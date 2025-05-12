@@ -3,13 +3,22 @@ $header-min-height: 60px;
 $footer-min-height: 60px;
 
 // Colors
-$color-body-bg: #121212;
-$color-header-bg: #1e1e1e;
-$color-footer-bg: #1e1e1e;
-$color-main-bg: #1a1a1a;
-$color-container-bg: #242424;
-$color-aside-bg: #2d2d2d;
-$color-content-bg: #333333;
+// $color-body-bg: #121212;
+// $color-header-bg: #1e1e1e;
+// $color-footer-bg: #1e1e1e;
+// $color-main-bg: #1a1a1a;
+// $color-container-bg: #242424;
+// $color-aside-bg: #2d2d2d;
+// $color-content-bg: #333333;
+
+// make all colors transparent
+$color-body-bg: transparent;
+$color-header-bg: transparent;
+$color-footer-bg: transparent;
+$color-main-bg: transparent;
+$color-container-bg: transparent;
+$color-aside-bg: transparent;
+$color-content-bg: transparent;
 
 #root {
   display: contents;
