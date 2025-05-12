@@ -3,6 +3,7 @@
 # Include other Makefiles
 include Makefiles/docker.mk
 include Makefiles/App.mk
+include Makefiles/storybook.mk
 
 # Build target (for convenient access to docker-build)
 build: docker-build
@@ -24,6 +25,13 @@ help:
 	@echo "  make app-install  - Install packages using pnpm"
 	@echo "  make app-start    - Start the development server with pnpm dev"
 	@echo "  make app-status   - Show processes running inside container"
+	@echo ""
+	@echo "Storybook Commands:"
+	@echo "  make story        - Start Storybook in background"
+	@echo "  make story-start  - Start Storybook in foreground"
+	@echo "  make story-stop   - Stop Storybook"
+	@echo "  make story-logs   - Show Storybook logs"
+	@echo "  make story-clean  - Clean Storybook container"
 	@echo ""
 	@echo "Project Commands:"
 	@echo "  make status       - Show status of Docker Compose containers"

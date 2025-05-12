@@ -11,6 +11,7 @@ services:
       - ../:/app
     ports:
       - "3000:3000"
+      - "6006:6006"
     environment:
       - NODE_ENV=development
       - HISTFILE=/app/tmp/.shell_history
